@@ -1,0 +1,7 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<label>NOME</label> <input type="text" #nome>
+<br>
+<label>CONTENUTO</label> <input type="text" #cont>
+<button (click) = invia(nome,cont) >INVIA</button>
+
+<app-post *ngFor = "let p of ListaPost" [post] = p></app-post>
